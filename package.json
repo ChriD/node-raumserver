@@ -1,0 +1,26 @@
+{
+  "name": "node-raumserver",
+  "version": "0.0.1",
+  "description": "Server to control the Raumfeld multiroom system via requests",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChriD/node-raumserver.git"
+  },
+  "keywords": [
+    "raumserver",
+    "raumkernel",
+    "raumfeld"
+  ],
+  "dependencies": {    
+    "node-raumkernel": "^1.0.5"
+  },
+  "author": "Christian Dürnberger",
+  "bugs": {
+    "url": "https://github.com/ChriD/node-raumserver/issues"
+  },
+  "homepage": "https://github.com/ChriD/node-raumserver#readme"
+}
