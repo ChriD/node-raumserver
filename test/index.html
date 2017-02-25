@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Raumserver Test-Application</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <div>
+        <button type="button" onclick="doGetAction('getZoneConfig')">Get Zone Configuration</button> 
+        <button type="button" onclick="doAction('play')">Play All</button> 
+        <button type="button" onclick="doAction('stop')">Stop All</button> 
+    </div>
+    <div>
+        Room Name <input id="id"></input>
+        <button type="button" onclick="doAction('play?id=' + $('#id').val())">Play</button> 
+        <button type="button" onclick="doAction('stop?id=' + $('#id').val())">Stop</button> 
+    </div>
+    <div id="jsonResult"></div>
+  </body>
+</html>
