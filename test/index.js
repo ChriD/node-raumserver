@@ -43,5 +43,9 @@ function doAction(_action)
 
 function showJSONResult(_result)
 {
-    $("#jsonResult").html(JSON.stringify(_result));
+    var node = new PrettyJSON.view.Node({
+      el:$('#resultData'),
+      data:_result
+    });
+    node.expandAll();
 }

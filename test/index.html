@@ -3,20 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title>Raumserver Test-Application</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quicksand" />
+    <link rel="stylesheet" type="text/css" href="pretty-json/css/pretty-json.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    
     <script type="text/javascript" src="jquery.js"></script>
+    
+    <script type="text/javascript" src="pretty-json/libs/underscore-min.js" ></script>
+    <script type="text/javascript" src="pretty-json/libs/backbone-min.js" ></script>
+    <script type="text/javascript" src="pretty-json/pretty-json-min.js" ></script>
+    
     <script type="text/javascript" src="index.js"></script>
   </head>
   <body>
-    <div>
-        <button type="button" onclick="doGetAction('getZoneConfig')">Get Zone Configuration</button> 
+    <div style="width: 100%; margin-top:15px; ">
+        <button type="button" onclick="doGetAction('getZoneConfig')">Get Zone Config</button> 
         <button type="button" onclick="doAction('play')">Play All</button> 
         <button type="button" onclick="doAction('stop')">Stop All</button> 
+        <button type="button" onclick="doAction('pause')">Pause All</button>
+        <button type="button" onclick="doAction('next')">Next</button> 
+        <button type="button" onclick="doAction('prev')">Prev</button>
     </div>
+    
+     <div style="width: 100%; height: 1px; background-color: gray; margin-top:15px;  margin-bottom:15px;"></div>
+    
     <div>
         Room Name <input id="id"></input>
         <button type="button" onclick="doAction('play?id=' + $('#id').val())">Play</button> 
         <button type="button" onclick="doAction('stop?id=' + $('#id').val())">Stop</button> 
+        <button type="button" onclick="doAction('pause?id=' + $('#id').val())">Pause</button>
+        <button type="button" onclick="doAction('next?id=' + $('#id').val())">Next</button>
+        <button type="button" onclick="doAction('prev?id=' + $('#id').val())">Prev</button>
     </div>
-    <div id="jsonResult"></div>
+    
+    <div style="width: 100%; height: 3px; background-color: gray; margin-top:15px; margin-bottom:15px;"></div>
+    
+    <div>     
+        <div id="resultData">
+        </div>
+    </div>
   </body>
 </html>
