@@ -39,7 +39,8 @@
         <button type="button" onclick="doAction('pause?id=' + $('#id').val())">Pause</button>
         <button type="button" onclick="doAction('next?id=' + $('#id').val())">Next</button>
         <button type="button" onclick="doAction('prev?id=' + $('#id').val())">Prev</button>
-        
+     </div>
+     <div style="width: 100%; margin-top:10px;">   
         Seek value <input id="seek"></input>
         <button type="button" onclick="doAction('seekToTrack?id=' + $('#id').val() + '&trackNumber=' + $('#seek').val())">Seek To Track</button>
         <button type="button" onclick="doAction('seek?id=' + $('#id').val() + '&value=' + $('#seek').val())">Seek Abs.</button>
@@ -47,19 +48,28 @@
     </div>
     <div style="width: 100%; margin-top:10px;">
         Play Mode <input id="playmode"></input>
-        <button type="button" onclick="doAction('setPlayMode?id=' + $('#id').val() + '&mode=' + $('#playmode').val())">Set Play Mode</button>
-        <button type="button" onclick="doAction('sleepTimer?id=' + $('#id').val() + '&secondsUntilSleep=60&secondsForVolumeRamp=50')">Set Sleep Timer</button>
-        <button type="button" onclick="doAction('sleepTimer?id=' + $('#id').val() + '&secondsUntilSleep=0')">Cancel Sleep Timer</button>
-        <button type="button" onclick="doAction('getSleepTimerState?id=' + $('#id').val())">Get Sleep Timer State</button>
-    </div>
+        <button type="button" onclick="doAction('setPlayMode?id=' + $('#id').val() + '&mode=' + $('#playmode').val())">Set Play Mode</button>        
     <div style="width: 100%; margin-top:10px;">
         Volume<input id="volume"></input>
         <button type="button" onclick="doAction('setVolume?id=' + $('#id').val() + '&value=' + $('#volume').val())">Set Volume on Zone</button>
         <button type="button" onclick="doAction('setVolume?id=' + $('#id').val() + '&value=' + $('#volume').val() + '&scope=room')">Set Volume on Room</button>        
+        <button type="button" onclick="doAction('setVolume?id=' + $('#id').val() + '&value=' + $('#volume').val() + '&relative=1')">Set Rel. Volume on Zone</button>
+        <button type="button" onclick="doAction('setVolume?id=' + $('#id').val() + '&value=' + $('#volume').val() + '&scope=room&relative=1')">Set Rel. Volume on Room</button>
+        <button type="button" onclick="doAction('volumeUp?id=' + $('#id').val() + '&value=' + $('#volume').val())">Volume Up Zone</button>
+        <button type="button" onclick="doAction('volumeDown?id=' + $('#id').val() + '&value=' + $('#volume').val())">Volume Down Zone</button>
+        <button type="button" onclick="doAction('fadeToVolume?id=' + $('#id').val() + '&value=' + $('#volume').val() + '&duration=5000'  )">Fade To Volume</button>
+        <button type="button" onclick="doAction('fadeToVolume?id=' + $('#id').val() + '&value=' + $('#volume').val() + '&duration=5000&relative=true' )">Fade To Volume Rel.</button>
+    </div>
+    <div style="width: 100%; margin-top:10px;"> 
+        <button type="button" onclick="doAction('sleepTimer?id=' + $('#id').val() + '&secondsUntilSleep=60&secondsForVolumeRamp=50')">Set Sleep Timer</button>
+        <button type="button" onclick="doAction('sleepTimer?id=' + $('#id').val() + '&secondsUntilSleep=0')">Cancel Sleep Timer</button>
+        <button type="button" onclick="doAction('getSleepTimerState?id=' + $('#id').val())">Get Sleep Timer State</button>
+    </div>
+    <div style="width: 100%; margin-top:10px;">   
         <button type="button" onclick="doAction('mute?id=' + $('#id').val())">Mute Zone</button>
-        <button type="button" onclick="doAction('unMute?id=' + $('#id').val())">UnMute Zone</button>        
+        <button type="button" onclick="doAction('unMute?id=' + $('#id').val())">UnMute Zone</button>
         <button type="button" onclick="doAction('mute?id=' + $('#id').val() + '&scope=room')">Mute Room</button>
-        <button type="button" onclick="doAction('unMute?id=' + $('#id').val() + '&scope=room')">UnMute Room</button>        
+        <button type="button" onclick="doAction('unMute?id=' + $('#id').val() + '&scope=room')">UnMute Room</button>
     </div>
     
     <div style="width: 100%; height: 3px; background-color: gray; margin-top:15px; margin-bottom:15px;"></div>

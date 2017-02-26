@@ -1,6 +1,6 @@
 {
   "name": "node-raumserver",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Server to control the Raumfeld multiroom system via requests",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "raumfeld"
   ],
   "dependencies": {    
-    "node-raumkernel": "^1.0.5"
+    "node-raumkernel": "^1.0.8"
   },
   "author": "Christian Dürnberger",
   "bugs": {
