@@ -41,9 +41,9 @@
         <button type="button" onclick="doAction('next?id=' + $('#id').val())">Next</button>
         <button type="button" onclick="doAction('prev?id=' + $('#id').val())">Prev</button>
         
-        <button type="button" onclick="doAction('enterManualStandby?id=' + $('#id').val())">Enter Standby</button>
-        <button type="button" onclick="doAction('enterAutomaticStandby?id=' + $('#id').val())">Enter Auto. Standby</button>
-        <button type="button" onclick="doAction('leaveStandby?id=' + $('#id').val())">Leave Standby</button>
+        <button type="button" onclick="doAction('enterManualStandby?id=' + $('#id').val() + '&scope=room')">Enter Standby</button>
+        <button type="button" onclick="doAction('enterAutomaticStandby?id=' + $('#id').val()+ '&scope=room')">Enter Auto. Standby</button>
+        <button type="button" onclick="doAction('leaveStandby?id=' + $('#id').val() + '&scope=room')">Leave Standby</button>
      </div>
      <div style="width: 100%; margin-top:10px;">   
         Seek value <input id="seek"></input>
