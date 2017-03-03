@@ -18,6 +18,7 @@
   <body>
     <div style="width: 100%; margin-top:15px; ">
         <button type="button" onclick="doGetAction('getZoneConfig')">Get Zone Config</button> 
+        <button type="button" onclick="doGetAction('getRendererState')">Get Renderer State</button>
         <button type="button" onclick="doAction('play')">Play All</button> 
         <button type="button" onclick="doAction('stop')">Stop All</button> 
         <button type="button" onclick="doAction('pause')">Pause All</button>
@@ -35,6 +36,7 @@
     
     <div>
         Room Id <input id="id"></input>
+        <button type="button" onclick="doAction('getRendererState?id=' + $('#id').val())">Get Renderer State</button>
         <button type="button" onclick="doAction('play?id=' + $('#id').val())">Play</button> 
         <button type="button" onclick="doAction('stop?id=' + $('#id').val())">Stop</button> 
         <button type="button" onclick="doAction('pause?id=' + $('#id').val())">Pause</button>
