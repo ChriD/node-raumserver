@@ -1,4 +1,5 @@
 # node-raumserver
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/ChriD/)
 [![npm:?](https://img.shields.io/npm/v/node-raumserver.svg?style=flat-square)](https://www.npmjs.com/packages/node-raumserver)
 [![dependencies:?](https://img.shields.io/npm/dm/node-raumserver.svg?style=flat-square)](https://www.npmjs.com/packages/node-raumserver)  
 
