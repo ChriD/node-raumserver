@@ -3,3 +3,8 @@
     /*font-size: 100%;*/
     font-family: 'Quicksand', sans-serif;
 }
+
+input {
+    border: 1px solid black;
+    padding: 3px;
+}

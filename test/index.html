@@ -16,6 +16,13 @@
     <script type="text/javascript" src="index.js"></script>
   </head>
   <body>
+
+    <div style="width: 100%; margin-top:15px; ">
+        node-raumserver host <input id="ip" style="width: 50em; background-color:lightgoldenrodyellow"></input> 
+    </div>
+
+    <div style="width: 100%; height: 1px; background-color: gray; margin-top:15px;  margin-bottom:15px;"></div>
+
     <div style="width: 100%; margin-top:15px; ">
         <button type="button" onclick="doGetAction('getZoneConfig')">Get Zone Config</button> 
         <button type="button" onclick="doGetAction('getRendererState')">Get Renderer State</button>
@@ -46,23 +53,19 @@
         <button type="button" onclick="doAction('enterManualStandby?id=' + $('#id').val() + '&scope=room')">Enter Standby</button>
         <button type="button" onclick="doAction('enterAutomaticStandby?id=' + $('#id').val()+ '&scope=room')">Enter Auto. Standby</button>
         <button type="button" onclick="doAction('leaveStandby?id=' + $('#id').val() + '&scope=room')">Leave Standby</button>
-     </div>
-     <div style="width: 100%; margin-top:10px;">
-        Room Id <input id="id2"></input>
-        Zone Id <input id="zoneId"></input>
-        <button type="button" onclick="doAction('createZone?id=' + $('#id2').val() )">Create Zone</button> 
-        <button type="button" onclick="doAction('dropFromZone?id=' + $('#id2').val() + '&zoneId=' + $('#zoneId').val()   )">Drop From Zone</button> 
-        <button type="button" onclick="doAction('addToZone?id=' + $('#id2').val() + '&zoneId=' + $('#zoneId').val()   )">Add To Zone</button>
-     </div>
-     <div style="width: 100%; margin-top:10px;">   
+    </div>
+
+    <div style="width: 100%; margin-top:10px;">   
         Seek value <input id="seek"></input>
         <button type="button" onclick="doAction('seekToTrack?id=' + $('#id').val() + '&trackNumber=' + $('#seek').val())">Seek To Track</button>
         <button type="button" onclick="doAction('seek?id=' + $('#id').val() + '&value=' + $('#seek').val())">Seek Abs.</button>
         <button type="button" onclick="doAction('seek?id=' + $('#id').val() + '&value=' + $('#seek').val() + '&relative=1')">Seek Rel.</button>
     </div>
     <div style="width: 100%; margin-top:10px;">
-        Play Mode <input id="playmode"></input>
-        <button type="button" onclick="doAction('setPlayMode?id=' + $('#id').val() + '&mode=' + $('#playmode').val())">Set Play Mode</button>        
+         Play Mode <input id="playmode"></input>
+        <button type="button" onclick="doAction('setPlayMode?id=' + $('#id').val() + '&mode=' + $('#playmode').val())">Set Play Mode</button>  
+    </div>  
+
     <div style="width: 100%; margin-top:10px;">
         Volume<input id="volume"></input>
         <button type="button" onclick="doAction('setVolume?id=' + $('#id').val() + '&value=' + $('#volume').val())">Set Vol on Zone</button>
@@ -89,8 +92,30 @@
         <button type="button" onclick="doAction('toggleMute?id=' + $('#id').val())">Toggle Mute Zone</button>
         <button type="button" onclick="doAction('toggleMute?id=' + $('#id').val() + '&scope=room')">Toggle Mute Room</button>
     </div>
+
+     <div style="width: 100%; height: 1px; background-color: gray; margin-top:15px;  margin-bottom:15px;"></div>
+
+     <div style="width: 100%; margin-top:10px;">
+        Room Id <input id="id2"></input>
+        Zone Id <input id="zoneId"></input>
+        <button type="button" onclick="doAction('createZone?id=' + $('#id2').val() )">Create Zone</button> 
+        <button type="button" onclick="doAction('dropFromZone?id=' + $('#id2').val() + '&zoneId=' + $('#zoneId').val()   )">Drop From Zone</button> 
+        <button type="button" onclick="doAction('addToZone?id=' + $('#id2').val() + '&zoneId=' + $('#zoneId').val()   )">Add To Zone</button>
+     </div>
+
+    <div style="width: 100%; height: 1px; background-color: gray; margin-top:15px;  margin-bottom:15px;"></div>
+
+    <div>
+        Room Id <input id="id9"></input>
+        value <input id="value9"></input>                 
+        <button type="button" onclick="doAction('loadPlaylist?id=' + $('#id9').val()  + '&value=' + ($('#value9').val()) )">Load Playlist</button>
+        <button type="button" onclick="doAction('loadContainer?id=' + $('#id9').val() + '&value=' + ($('#value9').val()) )">Load Container</button> 
+        <button type="button" onclick="doAction('loadUri?id=' + $('#id9').val()       + '&value=' + ($('#value9').val()) )">Load Uri</button> 
+        <button type="button" onclick="doAction('loadShuffle?id=' + $('#id9').val()   + '&value=' + ($('#value9').val()) )">Load Shuffle</button>
+     </div>
     
     <div style="width: 100%; height: 3px; background-color: gray; margin-top:15px; margin-bottom:15px;"></div>
+
     
     <div>     
         <div id="resultData">
