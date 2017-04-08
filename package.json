@@ -1,7 +1,7 @@
 {
   "engines" : { "node" : ">=7.6.0" },
   "name": "node-raumserver",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Server to control the Raumfeld multiroom system via requests",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "raumfeld"
   ],
   "dependencies": {    
-    "node-raumkernel": "^1.0.9"
+    "node-raumkernel": "^1.0.24"
   },
   "author": "Christian Dürnberger",
   "bugs": {
