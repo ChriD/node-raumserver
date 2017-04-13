@@ -17,7 +17,7 @@
     "raumfeld"
   ],
   "dependencies": {    
-    "node-raumkernel": "^1.0.24"
+    "node-raumkernel": "^1.1.1"
   },
   "author": "Christian Dürnberger",
   "bugs": {
