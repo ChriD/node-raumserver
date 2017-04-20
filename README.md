@@ -12,7 +12,7 @@ Changelog
 Changelog can be found [here](https://github.com/ChriD/node-raumserver/wiki/Changelog)  
 
 
-Please use with node version 7.x or above
+Please use with node version 7.x or above  
 For Version lower than 7.6.0 the --harmony-async-await parameter has to be used
 
 
