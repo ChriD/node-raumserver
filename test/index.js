@@ -47,6 +47,14 @@ function doGetAction(_action)
 
 function doAction(_action)
 {
+    if($("#confirm").is(':checked'))
+    {
+        if(_action.indexOf("?") > 0)
+            _action += "&confirm=1"
+        else
+            _action += "?confirm=1"
+    }
+
     showJSONResult({ "val" : "Waiting for response..."});
     setUrls();
     $.ajax({
