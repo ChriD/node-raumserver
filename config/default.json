@@ -1,0 +1,15 @@
+{
+    "raumserver": {
+        "port" : 8080
+    },
+    "raumfeld": {   
+        "raumfeldHostRequestPort"   : 47365, 
+        "raumfeldManufacturerId"    : "Raumfeld GmbH",
+        "raumfeldVirtualMediaPlayerModelDescription" : "Virtual Media Player",
+        "alivePingerIntervall"      : 2500,
+        "ssdpDiscovertimeout"       : 5000,
+        "bonjourDiscoverTimeout"    : 3000,
+        "uriMetaDataTemplateFile"   : "lib/setUriMetadata.template",
+        "rendererStateTriggerConfirmationTimout": 3500
+    }
+}

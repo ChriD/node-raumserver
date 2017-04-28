@@ -9,7 +9,7 @@
             "type": "node",
             "request": "launch",
             "name": "Programm starten",
-            "program": "${workspaceRoot}\\test.js"
+            "program": "${workspaceRoot}\\raumserver.js"
         },
         {
             "type": "node",
