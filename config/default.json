@@ -3,6 +3,7 @@
         "port" : 8080
     },
     "raumfeld": {   
+        "raumfeldHost"              : "0.0.0.0", // 0.0.0.0 = autodetect
         "raumfeldHostRequestPort"   : 47365, 
         "raumfeldManufacturerId"    : "Raumfeld GmbH",
         "raumfeldVirtualMediaPlayerModelDescription" : "Virtual Media Player",
