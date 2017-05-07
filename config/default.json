@@ -11,6 +11,7 @@
         "ssdpDiscovertimeout"       : 5000,
         "bonjourDiscoverTimeout"    : 3000,
         "uriMetaDataTemplateFile"   : "lib/setUriMetadata.template",
-        "rendererStateTriggerConfirmationTimout": 3500
+        "rendererStateTriggerConfirmationTimout": 3500,
+        "zoneTriggerConfirmationTimout": 6000
     }
 }

@@ -13,6 +13,8 @@ setConfiguration("raumfeld", "ssdpDiscovertimeout");
 setConfiguration("raumfeld", "bonjourDiscoverTimeout");
 setConfiguration("raumfeld", "uriMetaDataTemplateFile");
 setConfiguration("raumfeld", "rendererStateTriggerConfirmationTimout");
+setConfiguration("raumfeld", "zoneTriggerConfirmationTimout");
+
 
 raumserver.createLogger(4);
 raumserver.init();
