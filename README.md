@@ -15,7 +15,7 @@ Prebuilt binaries for several systems can be found [not-ready-yet](not-ready-yet
 
 Changelog
 -------------
-Changelog can be found [here](https://github.com/ChriD/node-raumserver/wiki/Changelog)  
+Changelog can be found [here](https://github.com/ChriD/node-raumserver/releases)  
 
 
 Requirements
