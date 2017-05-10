@@ -5,6 +5,7 @@ var Raumserver = require('./lib/lib.raumserver');
 var raumserver = new Raumserver();
 
 setConfiguration("raumserver", "port");
+setConfiguration("raumfeld", "raumfeldHost");
 setConfiguration("raumfeld", "raumfeldHostRequestPort");
 setConfiguration("raumfeld", "raumfeldManufacturerId");
 setConfiguration("raumfeld", "raumfeldVirtualMediaPlayerModelDescription");
