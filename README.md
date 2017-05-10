@@ -6,15 +6,19 @@
 [![NPM](https://nodei.co/npm/node-raumserver.png?downloads=true&downloadRank=true)](https://nodei.co/npm/node-raumserver/)
 
 A nodejs module to control the raumfeld multiroomsystem via HTTP-Requests  
+**Please check the [wiki](https://github.com/ChriD/node-raumserver/wiki) for install information and how to use the server**  
+
+Downloads
+-------------
+Prebuilt binaries for several systems can be found [not-ready-yet](not-ready-yet)  
+
 
 Changelog
 -------------
-Changelog can be found [here](https://github.com/ChriD/node-raumserver/wiki/Changelog)  
+Changelog can be found [here](https://github.com/ChriD/node-raumserver/releases)  
 
 
+Requirements
+-------------
 Please use with node version 7.x or above  
 For Version lower than 7.6.0 the --harmony-async-await parameter has to be used
-
-
-More Infos comming soon!  
-Please stay tuned!
