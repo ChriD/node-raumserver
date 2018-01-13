@@ -5,6 +5,7 @@ var Raumserver = require('./lib/lib.raumserver');
 var raumserver = new Raumserver();
 
 setConfiguration("raumserver", "port");
+setConfiguration("raumserver", "loglevel");
 setConfiguration("raumfeld", "raumfeldHost");
 setConfiguration("raumfeld", "raumfeldHostRequestPort");
 setConfiguration("raumfeld", "raumfeldManufacturerId");
@@ -17,7 +18,7 @@ setConfiguration("raumfeld", "rendererStateTriggerConfirmationTimout");
 setConfiguration("raumfeld", "zoneTriggerConfirmationTimout");
 
 
-raumserver.createLogger(4);
+//raumserver.createLogger(4);
 raumserver.init();
 
 
