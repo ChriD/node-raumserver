@@ -3,7 +3,7 @@
     "node": ">=7.6.0"
   },
   "name": "node-raumserver",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Server to control the Raumfeld multiroom system via requests",
   "main": "index.js",
   "scripts": {
