@@ -6,7 +6,7 @@
     "raumfeld": {   
         "raumfeldHost"              : "0.0.0.0", // 0.0.0.0 = autodetect
         "raumfeldHostRequestPort"   : 47365, 
-        "raumfeldManufacturerId"    : "Raumfeld GmbH",
+        "raumfeldManufacturerId"    : ["Raumfeld GmbH", "Lautsprecher Teufel GmbH"],
         "raumfeldVirtualMediaPlayerModelDescription" : "Virtual Media Player",
         "alivePingerIntervall"      : 2500,
         "ssdpDiscovertimeout"       : 5000,
