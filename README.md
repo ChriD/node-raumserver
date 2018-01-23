@@ -8,6 +8,18 @@
 A nodejs module to control the raumfeld multiroomsystem via HTTP-Requests  
 **Please check the [wiki](https://github.com/ChriD/node-raumserver/wiki) for install information and how to use the server**  
 
+Installation
+-------------
+create a folder with a name of your choice  
+open command line\console in the folder and do following  
+```
+npm install node-raumserver
+cd node_modules/node-raumserver
+npm start
+```
+
+
+
 Downloads
 -------------
 Prebuilt binaries for several systems can be found [not-ready-yet](not-ready-yet)  
