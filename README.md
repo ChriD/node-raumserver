@@ -22,7 +22,8 @@ npm start
 
 ### Via Docker image
 Search for **docker-raumserver** and install it.  
-You have to use `net=--host` for the container, otherwise the raumserver will not find any devices
+You have to use `net=--host` for the container, otherwise the raumserver will not find any devices.  
+Docker raumserver will reside on **port 8585**
 
 
 Changelog
