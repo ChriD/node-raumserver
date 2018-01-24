@@ -21,7 +21,7 @@ npm start
 ```
 
 ### Via Docker image
-Search for **docker-raumserver** and install it.
+Search for **docker-raumserver** and install it.  
 You have to use `net=--host` for the container, otherwise the raumserver will not find any devices
 
 
