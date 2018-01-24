@@ -19,6 +19,11 @@ npm start
 ```
 
 
+Using a Docker image
+-------------
+Docker images are available at
+https://hub.docker.com/r/chrid/docker-raumserver/
+
 
 Downloads
 -------------
