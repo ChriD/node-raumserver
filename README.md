@@ -10,6 +10,8 @@ A nodejs module to control the raumfeld multiroomsystem via HTTP-Requests
 
 Installation
 -------------
+
+### Via NPM
 create a folder with a name of your choice  
 open command line\console in the folder and do following  
 ```
@@ -18,16 +20,9 @@ cd node_modules/node-raumserver
 npm start
 ```
 
-
-Using a Docker image
--------------
-Docker images are available at
-https://hub.docker.com/r/chrid/docker-raumserver/
-
-
-Downloads
--------------
-Prebuilt binaries for several systems can be found [not-ready-yet](not-ready-yet)  
+### Via Docker image
+Search for **docker-raumserver** and install it.
+You have to use `net=--host` for the container, otherwise the raumserver will not find any devices
 
 
 Changelog
