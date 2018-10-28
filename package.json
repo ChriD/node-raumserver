@@ -20,7 +20,7 @@
   ],
   "dependencies": {
     "config": "^1.25.1",
-    "node-raumkernel": "^1.2.4"
+    "node-raumkernel": "^1.2.22"
   },
   "author": "Christian Dürnberger",
   "bugs": {

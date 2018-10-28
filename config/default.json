@@ -3,9 +3,9 @@
         "port" : 8080,
         "loglevel" : 2 // 0=error, 1=warnings, 2=info, 3=verbose, 4=debug, 5=silly
     },
-    "raumfeld": {   
+    "raumfeld": {
         "raumfeldHost"              : "0.0.0.0", // 0.0.0.0 = autodetect
-        "raumfeldHostRequestPort"   : 47365, 
+        "raumfeldHostRequestPort"   : 47365,
         "raumfeldManufacturerId"    : ["Raumfeld GmbH", "Lautsprecher Teufel GmbH"],
         "raumfeldVirtualMediaPlayerModelDescription" : "Virtual Media Player",
         "alivePingerIntervall"      : 2500,
