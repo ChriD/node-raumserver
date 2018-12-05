@@ -6,7 +6,10 @@
 [![NPM](https://nodei.co/npm/node-raumserver.png?downloads=true&downloadRank=true)](https://nodei.co/npm/node-raumserver/)
 
 A nodejs module to control the raumfeld multiroomsystem via HTTP-Requests  
-**Please check the [wiki](https://github.com/ChriD/node-raumserver/wiki) for install information and how to use the server**  
+**Please check the [wiki](https://github.com/ChriD/node-raumserver/wiki) for install information and how to use the server** 
+
+**Another wiki can be found here [gahujipo-wiki](https://github.com/gahujipo/node-raumserver-wiki). Thanks to gahujipo for creating this!**
+
 
 Installation
 -------------
