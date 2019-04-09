@@ -13,6 +13,12 @@
         },
         {
             "type": "node",
+            "request": "launch",
+            "name": "Debug on mac",
+            "program": "${workspaceRoot}/raumserver.js"
+        },
+        {
+            "type": "node",
             "request": "attach",
             "name": "An den Prozess anfügen",
             "address": "localhost",
