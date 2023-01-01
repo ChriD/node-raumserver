@@ -19,7 +19,7 @@
     "raumfeld"
   ],
   "dependencies": {
-    "config": "^1.31.0",
+    "config": "^3.3.8",
     "node-raumkernel": "^1.2.22"
   },
   "author": "Christian Dürnberger",
